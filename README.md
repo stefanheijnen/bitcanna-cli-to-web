@@ -11,6 +11,7 @@
 ## What is it? 
 It is a web interface that simplifies the use of bitcannad from a web server.  
 This interface is intended to replace the main functions of bitcann-qt.
+The goal is to reproduce the same functions as bitcanna-cli using RPC.
 
 ## Demonstration
 
