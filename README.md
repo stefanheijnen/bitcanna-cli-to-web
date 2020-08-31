@@ -36,10 +36,14 @@ The goal is to reproduce the same functions as bitcanna-cli using RPC.
  ## To Do 
  - [x] Main stats
  - [x] Console (like bitcanna-cli)
- - [ ] User account
- - [ ] Increased security
- 
-
+ - [x] Admin account
+ - [ ] Increased security 
+   - [x] Admin login  
+   - [x] Anti [CSRF](https://portswigger.net/web-security/csrf) 
+   - [x] Check ip (only one authorize, the owner of the wallet)
+   - [ ] Limit number of login attempts (anti bruteforce)
+   - [ ] Encrypt json config file
+   
  ## Meta
  
  atmon3r – [@atmon3r](https://twitter.com/atmon3r) – contact.atmoner@gmail.com  
