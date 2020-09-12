@@ -26,8 +26,8 @@ The goal is to reproduce the same functions as bitcanna-cli using RPC.
  - Npm 
  
  ## Installation
-
-Soon
+ 
+[Go on wiki install page](https://github.com/atmoner/bitcanna-cli-to-web/wiki/Installation) 
 
  ## Development setup
  
