@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Alpha</title>
+ 
+  </head>
+  <body>
+ 
+<nav class="uk-navbar-container uk-margin" uk-navbar>
+    <div class="uk-navbar-center">
+ 
+        <a class="uk-navbar-item uk-logo" href="/"><img src="img/8prvUSqO_400x400.png" width="50" height="50"></a>
+   
+    </div>
+
+</nav>
+ <div class="uk-container" id="all"><br /> 
+ <div class="uk-position-center uk-overlay uk-overlay-default">
+ <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+    <h3 class="uk-card-title">Login</h3>
+ 
+	<div class="uk-alert-danger" style="display: none" id="badLogin" uk-alert>
+    	<a class="uk-alert-close" uk-close></a>
+    	<p>Bad login</p>
+	</div>
+	
+    <fieldset class="uk-fieldset"> 
+        <div class="uk-margin">
+            <input class="uk-input" type="text" id="user" placeholder="User" >
+        </div>
+        
+        <div class="uk-margin">
+        <input class="uk-input" type="password" id="pass" placeholder="Password" >
+        </div>
+        <button class="uk-button uk-button-default" id="startCahllenge">Login</button>
+    </fieldset>
+ 
+</div>
+</div>
+</div>
+ 
+ <script src="js/login.js"></script> 
+  </body>
+</html>
+ 

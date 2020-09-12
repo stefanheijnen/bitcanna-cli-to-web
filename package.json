@@ -1,0 +1,28 @@
+{
+  "name": "bitcanna-web",
+  "version": "1.0.0",
+  "description": "Web interface for bitcanna to view your wallet",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Bitcanna",
+    "Cryptomonnaie",
+    "Weed",
+    "Cannabis"
+  ],
+  "author": "atmoner",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "moment": "^2.27.0",
+    "node-bitcoin-rpc": "^1.1.3",
+    "request": "^2.88.2",
+    "uniqid": "^5.2.0"
+  }
+}
