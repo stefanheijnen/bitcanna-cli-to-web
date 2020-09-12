@@ -26,8 +26,8 @@ The goal is to reproduce the same functions as bitcanna-cli using RPC.
  - Npm 
  
  ## Installation
- 
- Soon! 
+
+Soon
 
  ## Development setup
  
@@ -35,14 +35,11 @@ The goal is to reproduce the same functions as bitcanna-cli using RPC.
  
  ## To Do 
  - [x] Main stats
- - [x] Console (like bitcanna-cli)
  - [x] Admin account
- - [ ] Increased security 
+ - [x] Increased security 
    - [x] Admin login  
    - [x] Anti [CSRF](https://portswigger.net/web-security/csrf) 
-   - [x] Check ip (only one authorize, the owner of the wallet)
-   - [ ] Limit number of login attempts (anti bruteforce)
-   - [ ] Encrypt json config file
+   - [x] Check ip (only one authorize, the owner of the wallet)  
    
  ## Meta
  
