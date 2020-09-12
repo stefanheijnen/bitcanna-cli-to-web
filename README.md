@@ -15,8 +15,7 @@ The goal is to reproduce the same functions as bitcanna-cli using RPC.
 
 ## Demonstration
 
-![BitCannawebinterface](https://i.imgur.com/BuynnEA.png)
-![BitCannawebinterface](https://i.imgur.com/pHEWIv2.png)
+![BitCannawebinterface](https://i.imgur.com/NmNn25S.png)
 
 ## Require
 
