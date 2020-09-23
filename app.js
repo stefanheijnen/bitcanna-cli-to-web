@@ -205,10 +205,10 @@ app.get('/adresse', function (req, res) {
 		return res.send({error:'unauthorized'})	
 })
  
-app.listen(8000, function () {
+app.listen(authentification.portBitcannaWeb, function () {
 	console.log('***********************************************')
 	console.log('* Welcome on Bitcanna-web')	
-	console.log('* Bitcanna-web app listening on port 8000!')
+	console.log('* Bitcanna-web app listening on port ' + authentification.portBitcannaWeb)
 	console.log('**********************************************')
 })
 

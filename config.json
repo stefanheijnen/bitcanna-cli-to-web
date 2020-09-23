@@ -3,6 +3,7 @@
 	 "pass":"", 
  	 "ip":"false", 
  	 "secretSession":"",
+ 	 "portBitcannaWeb":"8000",
  	 "rpcHost":"localhost",
  	 "rpcPort":"9888",
  	 "rpcUser":"",
