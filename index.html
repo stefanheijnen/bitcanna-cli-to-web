@@ -107,6 +107,25 @@
      <br />
 <br />   
 </div>
+
+<div id="modal-example" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Set split threshold</h2>
+ 
+        <div class="uk-margin">
+            <input class="uk-input" id="num" type="text" placeholder="1000">
+        </div>
+        
+        <div class="uk-margin">
+            <input class="uk-range" id="thresholdValue" type="range" value="1000" min="1000" max="10000" step="100" oninput="num.value = this.value"> 
+        </div>        
+        <div >
+        	<button class="uk-button uk-button-primary" id="runUpdatethreshold">Update</button> 
+        	<div class="uk-inline" style="display: none;" id="succes"> Succes </div>
+        </div>    
+    </div>
+</div>
+
 	<script src="js/main.js"></script>
   </body>
 </html>

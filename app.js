@@ -204,7 +204,48 @@ app.get('/adresse', function (req, res) {
 	} else
 		return res.send({error:'unauthorized'})	
 })
- 
+
+app.get('/getstakesplitthreshold', function (req, res) {
+	res.setHeader('Content-Type', 'application/json');
+	if (req.session.name) { 
+		try {
+			bitCanna.call('getstakesplitthreshold', [], function (err, resB) {
+				if (err !== null) {
+					res.send({error:err})
+				} else {
+					res.send(resB.result)
+					
+				}
+			})	
+		}
+		catch (err) { 
+			console.log(err);
+		}		
+	} else
+		return res.send({error:'unauthorized'})	
+})
+app.post('/setstakesplitthreshold', function (req, res, next) {
+	res.setHeader('Content-Type', 'application/json');
+	console.log(req.body.thresholdValue)
+	if (req.session.name) { 
+		try {
+			bitCanna.call('setstakesplitthreshold', [parseInt( req.body.thresholdValue )], function (err, resB) {
+				if (err !== null) {
+					res.send({error:err})
+				} else {
+					res.send(resB)
+					console.log(resB)
+					
+				}
+			})	
+		}
+		catch (err) { 
+			console.log(err);
+		}		
+	} else
+		return res.send({error:'unauthorized'})	
+})
+
 app.listen(authentification.portBitcannaWeb, function () {
 	console.log('***********************************************')
 	console.log('* Welcome on Bitcanna-web')	

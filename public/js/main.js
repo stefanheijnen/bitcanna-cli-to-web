@@ -12,6 +12,27 @@ $.get("/stats", function(data, status){
 	$("#fullStats tbody").append(markup);
 });
 
+$.get("/getstakesplitthreshold", function(data, status){
+	var markup = "<tr><td>Stake split threshold</td><td id='replacethreshold'>" + data['split stake threshold set to ']  + " <a id='editThreshold' uk-icon='file-edit'></a> </td></tr>";
+	$("#fullStats tbody").append(markup);
+	//	
+	$("#editThreshold").click(function(){
+		$(function() {
+			var modal = UIkit.modal("#modal-example");
+			modal.show();  
+		});  
+	}); 
+});
+
+$("#runUpdatethreshold").click(function(){	
+	console.log($('#thresholdValue').val());	
+	$("#replacethreshold").replaceWith("<td id='replacethreshold'> "+$('#thresholdValue').val()+" <a id='editThreshold' uk-icon='file-edit'></a> </td>");
+	$.post("setstakesplitthreshold", { thresholdValue: $('#thresholdValue').val() }, function(data, status){	
+		
+		$("#succes").show();
+	});
+}); 
+
 $.get("/wallet", function(data, status){
 	walletAmout = data.balance
 	var markup = "<tr><td>Balance</td><td>" + data.balance + "</td></tr>"+
