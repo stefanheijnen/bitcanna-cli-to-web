@@ -77,7 +77,7 @@ $.get("/stakingstatus", function(data, status){
 				 "<tr><td>Wallet unlocked</td><td>" + walletunlocked + "</td></tr>"+
 				 "<tr><td>Min table coins</td><td>" + mintablecoins + "</td></tr>"+
 				 "<tr><td>Enough coins (min: 500 bcna)</td><td>"+checkAmount+"</td></tr>";	
-	$("#stak tbody").append(markup);
+	$("#stake tbody").append(markup);
 });
 
 $.get("/adresse", function(data, status){
@@ -123,7 +123,7 @@ $.get("/listtransactions", function(data, status){
 	console.log(arrayData)
 	Highcharts.chart('container', {
 		title: {
-			text: 'Stak by days'
+			text: 'Stake by days'
 		},
 		xAxis: {
 			type: 'datetime'
@@ -135,7 +135,7 @@ $.get("/listtransactions", function(data, status){
 	});
 	$('#container2').highcharts({
 		title: {
-			text: 'Stak by last hours'
+			text: 'Stake by last hours'
 		},
 		xAxis: {
 			type: 'datetime',
