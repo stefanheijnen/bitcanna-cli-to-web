@@ -43,7 +43,7 @@ $.get("/wallet", function(data, status){
 });
 
 $.get("/listtransactions", function(data, status){
-	const dataReversed = data.slice(-10).reverse();
+	const dataReversed = data.slice(-100).reverse();
 	
 	dataReversed.forEach(function(item){	
 		var markup = "<tr><td>" + item.date + "</td><td>" + item.txid + "</td><td>" + item.amout + "</td></tr>"
