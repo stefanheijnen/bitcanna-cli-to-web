@@ -113,7 +113,7 @@ app.get('/listtransactions', function (req, res) {
 				} else {
 					var tempArray = []
 					resB.result.forEach(function(item){
-						const dateTimereceived = moment.unix(item.timereceived - 10 ).format("DD-MM-YYYY HH:mm:ss");
+						const dateTimereceived = moment.unix(item.timereceived - 100 ).format("DD-MM-YYYY HH:mm:ss");
 						function check(array, key, value) {
 							if (!array.some(object => object[key] === value))
 								tempArray.push({txid:item.txid, date:dateTimereceived, unixTime:item.timereceived, amount:'2.4'});
