@@ -135,7 +135,7 @@ $.get("/listtransactions", function(data, status){
 	});
 	$('#container2').highcharts({
 		title: {
-			text: 'Stake by last hours'
+			text: 'Stake by last 24h'
 		},
 		xAxis: {
 			type: 'datetime',
