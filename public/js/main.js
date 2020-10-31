@@ -46,7 +46,7 @@ $.get("/listtransactions", function(data, status){
 	const dataReversed = data.slice(-100).reverse();
 	
 	dataReversed.forEach(function(item){	
-		var markup = "<tr><td>" + item.date + "</td><td>" + item.txid + "</td><td>" + item.amout + "</td></tr>"
+		var markup = "<tr><td>" + item.date + "</td><td>" + item.txid + "</td><td>" + item.amount + "</td></tr>"
 		$("#tx tbody").append(markup);		 
 	});
  
