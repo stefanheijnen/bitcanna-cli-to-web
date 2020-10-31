@@ -116,7 +116,7 @@ app.get('/listtransactions', function (req, res) {
 						const dateTimereceived = moment.unix(item.timereceived - 10 ).format("DD-MM-YYYY HH:mm:ss");
 						function check(array, key, value) {
 							if (!array.some(object => object[key] === value))
-								tempArray.push({txid:item.txid, date:dateTimereceived, unixTime:item.timereceived, amout:'2.6'});
+								tempArray.push({txid:item.txid, date:dateTimereceived, unixTime:item.timereceived, amount:'2.4'});
 						}					
 						check(tempArray, 'txid', item.txid);					 
 					}); 
